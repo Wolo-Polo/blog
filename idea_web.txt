@@ -1,0 +1,25 @@
+thiết kế database:
+cần 1 bảng để lưu các post: id post , tên post, mô tả, tag-danh mục, tác giả, ngày đăng, nội dung, số lượt xem, điểm đánh giá.
+cần 1 bảng để lưu thông tin tác giả: id tác giả, tên, email, pass đăng nhập, thông tin bản thân, link face, link github, các bài đăng.
+cần 1 bảng để lưu thông tin liên hệ: id contact, tên, địa chỉ email và nội dung.
+cần 1 bảng để lưu thông tin admin: tên, pass đăng nhập.
+quyền admin là cao nhất- xong đến quyền ng đăng post- cuối dùng là ng xem.
+các tính năng:
+ng dùng chỉ có thể xem các bài viết và liên lạc.
+ng đăng bài phải đăng nhập để đăng, có thể edit bài đăng của mình
+admin có thể thêm xóa tác giả (ng đăng bài), thêm bài đăng(vài trò như 1 tác giả) xóa các bài đăng của các tác giả khác. có ít nhất 1 admin mặc định và k thể xóa. các admin có thể xóa bởi admin khác.
+
+như vậy cần có các xử lý sau:
+	hiển thị các bài viết theo danh sách, theo tác giả, và các bài viết mới, hiển thị chi tiết bài viết đó
+	nhận liên lạc của ng dùng và lưu vào database
+	hiển thị thông tin tác giả
+	cho phép đăng nhập (màn hình đăng nhập - cả ng viết xài chung 1 màn hình đăng nhập vào tài khoản loại nào thì chuyển đến loại trang của tài khoản đó)
+	hiển thị trang của ng viết.
+	cho phép ng viết danh sách bài viết của mình, edit, và thêm bài viết mới. chuyển sang trang post bài bài viết. post xong quay lại trang chính của ng viết
+	cho phép admin xem danh sách các ng viết, xem danh sách admin, xem danh sách các bài viết và edit các điều trên
+
+
+	
+
+
+
