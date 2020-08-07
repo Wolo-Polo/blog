@@ -8,9 +8,15 @@ import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import org.springframework.security.core.GrantedAuthority;
+
 @Entity
 @Table(name = "role")
-public class Role extends BaseEntity{
+public class Role extends BaseEntity implements GrantedAuthority{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4922573763733544812L;
 	@Column(name = "name")
 	private String name;
 	@Column(name = "descript")
@@ -52,6 +58,12 @@ public class Role extends BaseEntity{
 
 	public Role() {
 		super();
+	}
+
+	@Override
+	public String getAuthority() {
+		// TODO Auto-generated method stub
+		return this.name;
 	}
 	
 	

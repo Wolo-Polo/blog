@@ -42,17 +42,21 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 		registry.addResourceHandler("/css/**").addResourceLocations("/resources/css/");
 		registry.addResourceHandler("/admin/css/**").addResourceLocations("/resources/admin/css/");
 		registry.addResourceHandler("/admin/summernote-0.8.18-dist/**").addResourceLocations("/resources/admin/summernote-0.8.18-dist/");
+		registry.addResourceHandler("/writer/css/**").addResourceLocations("/resources/admin/css/");
+		registry.addResourceHandler("/writer/summernote-0.8.18-dist/**").addResourceLocations("/resources/admin/summernote-0.8.18-dist/");
+		
 		
 		registry.addResourceHandler("/js/**").addResourceLocations("/resources/js/");
 		registry.addResourceHandler("/admin/js/**").addResourceLocations("/resources/admin/js/");
+		registry.addResourceHandler("/writer/js/**").addResourceLocations("/resources/admin/js/");
+		
 		
 		registry.addResourceHandler("/img/**").addResourceLocations("/resources/img/").addResourceLocations("/data/img/");
 		registry.addResourceHandler("/admin/img/**").addResourceLocations("/resources/admin/img/");
-		//registry.addResourceHandler("/img/**").addResourceLocations("/data/img/");
 		registry.addResourceHandler("/admin/img/**").addResourceLocations("/data/img/");
+		registry.addResourceHandler("/writer/img/**").addResourceLocations("/resources/admin/img/");
+		registry.addResourceHandler("/writer/img/**").addResourceLocations("/data/img/");
 		
-		registry.addResourceHandler("/vendor/**").addResourceLocations("/resources/vendor/");
-		registry.addResourceHandler("/admin/vendor/**").addResourceLocations("/resources/admin/vendor/");
 	}
 }
 

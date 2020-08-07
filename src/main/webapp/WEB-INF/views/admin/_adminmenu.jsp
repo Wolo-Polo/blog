@@ -31,7 +31,7 @@
 				aria-labelledby="userDropdown">
 				<a class="dropdown-item" href="#">Profile</a>
 				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="login.html">Logout</a>
+				<a class="dropdown-item" href="${request.pageContext.contexPath }/perform_logout">Logout</a>
 			</div></li>
 	</ul>
 </nav>
