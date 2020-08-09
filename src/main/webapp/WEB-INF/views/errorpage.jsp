@@ -16,7 +16,7 @@
 	<div style="background-color: #ffffffe5;">
 		<section class="" style="padding-top: 5%; padding-bottom: 1%;">
 			<div class="rounded col-lg-8 col-md-10 mx-auto" style="padding: 1%;">
-				<div><h2>Rất tiếc chúng tôi không tìm thấy trang bạn yêu cầu!</h2></div>
+				<div><h2>Đã có một lỗi không mong muốn xảy ra! Vui lòng thử lại</h2></div>
 
 			</div>
 

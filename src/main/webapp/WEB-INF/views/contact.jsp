@@ -14,7 +14,7 @@
 
 	<!-- Page Content -->
 	<div class="bg-muted">
-		<section class="" style="padding-top: 15%; padding-bottom: 1%;">
+		<section class="" style="padding-top: 8%; padding-bottom: 1%;">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-8 col-lg-6 pb-5 ">

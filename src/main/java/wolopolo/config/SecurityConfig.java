@@ -52,7 +52,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
             .antMatchers("/css/**", "/js/**", "/img/**", "/vendor/**").permitAll()
             
             // thực hiện xác thực với các url kiểu ..../admin/....
-            .antMatchers("/admin/**", "/writer/**").authenticated()
+            .antMatchers("/admin/**").hasAnyAuthority("admin")
+            
+            //thực hiện xác thực với các url kiểu .../writer/
+            .antMatchers("/writer/**").hasAnyAuthority("admin", "writer")
             
             .and() // kết hợp với điều kiện.
             

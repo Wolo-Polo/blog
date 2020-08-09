@@ -36,6 +36,10 @@ public class HomeController {
 	public String getLogin(){
 		return "login";
 	}
+	@RequestMapping(value = {"errorpage"}, method = RequestMethod.GET)
+	public String getErrorPage(){
+		return "errorpage";
+	}
 	
 	@RequestMapping(value = {"passwordrecovery"}, method = RequestMethod.GET)
 	public String getPasswordRecovery(){
@@ -67,11 +71,11 @@ public class HomeController {
 		return "detailpost";
 	}
 	
-	@RequestMapping("/writer")
+	@RequestMapping("/writers")
 	public String getWriterPage(Model model) {
 		List<User> users= userRepository.findUsersByRole("writer");//user ở đây có vai trò là ng viết
 		model.addAttribute("users", users);
-		return "writer";
+		return "writers";
 	}
 	
 	@RequestMapping("/posts/writer/{iduser}")
